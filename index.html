@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Restaurent Bill</title>
+  <!-- <script>
+        function restbill(){
+   
+    const Total=Number(document.getElementById("total").value)
+    const Rate=Number(document.getElementById("rate").value)
+    
+    const Tip=Total*(Rate/100)
+    const Taxrate=5.5
+    const Tax=Total*(Taxrate/100)
+    const Grandtotal=+Total+Tip+Tax
+
+    document.getElementById("tip").innerHTML=Tip
+    document.getElementById("tax").innerHTML=Tax
+    document.getElementById("grandtotal").innerHTML=Grandtotal
+    
+    
+}
+    </script>-->
+</head>
+<body>
+    <h1>Maitre D</h1>
+    <form>
+    <table align="center">
+        <tr>
+        <td>Total <input type="text" id="total" ></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Tip: $<span id="tip"></span></td>
+        <td>Rate: <input type="text" id="rate">
+    </tr>
+   <tr>
+        <td>Tax: $<span id="tax"></span></td>
+        
+    </tr>
+    <tr>
+        <td>Grand total:$ <span id="grandtotal"></span></td>
+        
+    </tr>
+    <br>
+    <br>
+    <br>
+</table>
+<div style="text-align:center">
+       <button  type="button" id="button" onclick="restbill()">Calculate</button>  
+    </div>
+</form>
+<script src="javascript.js"></script>
+</body>
+</html>
